@@ -1,0 +1,115 @@
+/* ============================================================
+   SOLTOR CAPITAL — Footer as a day-series finale
+   Shared across every page. The footer is the last chapter:
+   it continues the dusk sky, glows with the page's phase
+   accent, and speaks in the same mono-kicker language as the
+   rest of the system. Uses var(--acc, #4a52c9) so a page with
+   no phase class (homepage) falls back to dusk indigo.
+   ============================================================ */
+
+.footer {
+  position: relative;
+  z-index: 2;
+  background:
+    radial-gradient(115% 95% at 50% 122%, color-mix(in srgb, var(--acc, #4a52c9) 30%, transparent) 0%, transparent 62%),
+    linear-gradient(180deg, #0d1226 0%, #080c1c 100%);
+  color: #fff7ef;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+/* Top hairline with an accent glow, like chapter dividers */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 4%, color-mix(in srgb, var(--acc, #4a52c9) 65%, transparent) 50%, transparent 96%);
+}
+
+.footer .container { position: relative; }
+.footer-main { padding: clamp(56px, 9vw, 88px) 0 var(--space-14, 3.5rem); }
+
+/* Brand kicker across the top of the footer (mono-eyebrow) */
+.footer-main::before {
+  content: "Global Trading  /  Energy  /  Technology  /  Contracting";
+  display: block;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--acc, #9aa8ff);
+  margin-bottom: clamp(24px, 5vw, 44px);
+}
+.footer-main::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: clamp(32px, 6vw, 56px);
+  background: linear-gradient(90deg, var(--acc-line, rgba(154,168,255,.3)), rgba(255,255,255,.07));
+}
+
+/* Grid — brand column wider, links in columns */
+.footer-grid { grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: var(--space-12, 3rem); }
+
+/* Brand block */
+.footer .logo { color: #fff; }
+.footer .logo-mark {
+  background: color-mix(in srgb, var(--acc, #4a52c9) 88%, #fff 12%);
+  color: #fff;
+  box-shadow: 0 6px 18px -8px color-mix(in srgb, var(--acc, #4a52c9) 70%, transparent);
+}
+.footer .logo-accent { color: var(--acc, #9aa8ff); }
+.footer-col p { color: rgba(255,247,239,.58); line-height: 1.75; font-size: .93rem; }
+
+/* Column headings as mono kickers */
+.footer-col h4 {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--acc, #9aa8ff);
+  margin-bottom: var(--space-5, 1.25rem);
+}
+
+/* Links */
+.footer-links { display: grid; gap: 10px; }
+.footer-links li { margin-bottom: 0; }
+.footer-links a {
+  color: rgba(255,247,239,.68);
+  font-size: .93rem;
+  transition: color var(--duration-fast, .16s) var(--ease, ease-out), padding-left var(--duration-fast, .16s) var(--ease, ease-out);
+}
+.footer-links a:hover { color: #fff; padding-left: 4px; }
+
+/* Bottom bar — mono captions */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: var(--space-5, 1.25rem) 0;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: rgba(255,247,239,.45);
+}
+.footer-bottom p { color: inherit; font-size: inherit; margin: 0; }
+.footer-legal-links a {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: rgba(255,247,239,.45);
+  transition: color var(--duration-fast, .16s) var(--ease, ease-out);
+}
+.footer-legal-links a:hover { color: #fff; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-8, 2rem); }
+  .footer-main::before { font-size: 10px; letter-spacing: .18em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .footer-links a, .footer-legal-links a { transition: none; }
+  .footer-links a:hover { padding-left: 0; }
+}

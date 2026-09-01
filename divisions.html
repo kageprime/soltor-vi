@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divisions &amp; Capabilities — Soltor VI Limited</title>
-    <meta name="description" content="About Soltor VI Limited and its five integrated divisions: energy products, equipment, technology, network contracts, and general contracting.">
+    <title>Divisions &amp; Capabilities — Soltor Capital</title>
+    <meta name="description" content="About Soltor Capital and its five integrated divisions: energy products, equipment, technology, network contracts, and general contracting.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b0c10'/><text x='50' y='72' font-size='62' font-family='sans-serif' font-weight='800' fill='%23fff' text-anchor='middle'>S</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/day-theme.css">
+    <link rel="stylesheet" href="css/day-footer.css">
+    
 </head>
-<body>
+<body class="phase-dawn">
 
     <header class="site-header">
         <div class="header-dock">
-            <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">VI</span></span></a>
+            <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">CAPITAL</span></span></a>
             <nav class="nav-container">
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="divisions.html" class="nav-link active">About</a></li>
-                    <li><a href="products.html" class="nav-link">Oil &amp; Gas</a></li>
+                    <li><a href="divisions.html" class="nav-link active">Divisions</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
                     <li><a href="technology.html" class="nav-link">Technology</a></li>
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="suppliers.html" class="nav-link">Suppliers</a></li>
@@ -36,8 +39,8 @@
         <button class="close-menu" aria-label="Close Menu">&times;</button>
         <ul class="mobile-nav-links">
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="divisions.html" class="nav-link active">About</a></li>
-            <li><a href="products.html" class="nav-link">Oil &amp; Gas</a></li>
+            <li><a href="divisions.html" class="nav-link active">Divisions</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
             <li><a href="technology.html" class="nav-link">Technology</a></li>
             <li><a href="projects.html" class="nav-link">Projects</a></li>
             <li><a href="suppliers.html" class="nav-link">Suppliers</a></li>
@@ -52,10 +55,11 @@
 
     <main>
     <!-- PAGE HERO -->
-    <section class="page-hero page-hero--photo" style="background: linear-gradient(180deg, rgba(11,12,16,0.72), rgba(11,12,16,0.90)), url('images/hero-bg.png') center/cover;">
+    <section class="page-hero">
+        <div class="page-hero-sky" aria-hidden="true"></div>
         <div class="container">
             <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Divisions</span></nav>
-            <span class="eyebrow">Soltor VI Limited</span>
+            <span class="eyebrow">Soltor Capital</span>
             <h1 style="margin-top:14px;">An Integrated Global Platform</h1>
             <p class="section-subtitle" style="margin-top:14px;">Five divisions operating as one procurement and trading network across energy, technology, and infrastructure.</p>
         </div>
@@ -65,7 +69,7 @@
     <section id="about" class="section">
         <div class="container">
             <div class="section-header reveal is-in">
-                <span class="eyebrow-dash">01 // ABOUT SOLTOR VI</span>
+                <span class="eyebrow-dash">01 // ABOUT SOLTOR CAPITAL</span>
                 <h2>An International Trading &amp; Procurement Powerhouse</h2>
                 <p class="section-subtitle">Connecting energy product markets, equipment manufacturers, and corporate contract clients across Africa, Middle East, Europe, and Asia.</p>
             </div>
@@ -83,6 +87,10 @@
                 </div>
             </div>
 
+            <figure class="day-banner reveal is-in">
+                <img src="images/stock-refinery.jpg" alt="Petroleum refinery processing facilities" loading="lazy">
+                <figcaption>Energy desk &mdash; refinery and trading operations</figcaption>
+            </figure>
             <div class="roles-rows reveal is-in">
                 <div class="role-row">
                     <span class="role-row-num">01</span>
@@ -162,104 +170,15 @@
                 <div class="card"><h3 style="margin-bottom:1rem;">Oil &amp; Gas Contracts</h3><p>Equipment supply, procurement, industrial supplies, energy products, and oilfield services.</p></div>
                 <div class="card"><h3 style="margin-bottom:1rem;">General Contracts</h3><p>Procurement, equipment supply, facility-related services, industrial and corporate contracts.</p></div>
             </div>
-
-            <div id="contract-form" class="form-section card reveal is-in">
-                <h3>Submit a Contract Request</h3>
-                <form action="#" method="POST" novalidate>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label" for="contract-org">Organization <span class="req">*</span></label>
-                            <input type="text" id="contract-org" name="organization" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="contract-person">Contact Person <span class="req">*</span></label>
-                            <input type="text" id="contract-person" name="contact_person" class="form-input" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label" for="contract-email">Email <span class="req">*</span></label>
-                            <input type="email" id="contract-email" name="email" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="contract-phone">Phone <span class="req">*</span></label>
-                            <input type="tel" id="contract-phone" name="phone" class="form-input" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label" for="contract-category">Category <span class="req">*</span></label>
-                            <select id="contract-category" name="category" class="form-select" required>
-                                <option value="">Select Category</option>
-                                <option value="Technology">Technology</option>
-                                <option value="Oil & Gas">Oil & Gas</option>
-                                <option value="General">General</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="contract-budget">Budget Range</label>
-                            <select id="contract-budget" name="budget" class="form-select">
-                                <option value="">Select Budget Range</option>
-                                <option value="Under $10,000">Under $10,000</option>
-                                <option value="$10,000–$50,000">$10,000–$50,000</option>
-                                <option value="$50,000–$250,000">$50,000–$250,000</option>
-                                <option value="$250,000–$1M">$250,000–$1M</option>
-                                <option value="Over $1M">Over $1M</option>
-                                <option value="Prefer Not to Say">Prefer Not to Say</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="contract-desc">Project Description <span class="req">*</span></label>
-                        <textarea id="contract-desc" name="project_description" class="form-textarea" rows="5" required></textarea>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label" for="contract-products">Products/Services Required</label>
-                            <input type="text" id="contract-products" name="products_required" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="contract-qty">Quantity</label>
-                            <input type="text" id="contract-qty" name="quantity" class="form-input">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label class="form-label" for="contract-location">Location</label>
-                            <input type="text" id="contract-location" name="location" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="contract-date">Required Delivery Date</label>
-                            <input type="date" id="contract-date" name="delivery_date" class="form-input">
-                        </div>
-                    </div>
-                    <div class="form-group" style="display:flex; align-items:center; gap:10px;">
-                        <input type="checkbox" id="contract-nda" name="nda_required" style="width:auto;">
-                        <label class="form-label" for="contract-nda" style="margin:0;">This project requires a Non-Disclosure Agreement</label>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="contract-docs">Supporting Documents</label>
-                        <input type="file" id="contract-docs" name="documents" accept=".pdf,.doc,.docx,.xls,.xlsx">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Submit Contract Request</button>
-                </form>
-                <div id="contract-success" class="form-success">
-                    <div class="form-success-icon">&#10003;</div>
-                    <h3>Contract Request Submitted</h3>
-                    <p>Thank you for your contract request. Our contracts team will review your requirements and respond within 2 business days.</p>
-                    <button type="button" class="btn btn-outline reset-form-btn">Submit Another Request</button>
-                </div>
-            </div>
         </div>
-    </section>
 
     <!-- CTA -->
     <section class="cta-section section">
         <div class="container">
             <h2>Let's Build the Contract</h2>
-            <p>From a single allocation to a multi-year infrastructure programme — tell us what you need and we'll mobilise the desk.</p>
+            <p>From a single allocation to a multi-year infrastructure programme, tell us what you need and we will mobilise the desk.</p>
             <div class="hero-actions">
-                <a href="products.html#quote" class="btn btn-primary">Request a Quote</a>
+                <button type="button" class="btn btn-primary btn-lg" data-open-contract>Discuss a Contract</button>
                 <a href="contact.html" class="btn btn-ghost">Contact Us</a>
             </div>
         </div>
@@ -270,18 +189,18 @@
         <div class="container footer-main">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">VI</span></span></a>
+                    <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">CAPITAL</span></span></a>
                     <p>International trading, procurement, technology, and contracting company.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="divisions.html">About Us</a></li>
+                        <li><a href="divisions.html">Divisions</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="products.html#quote">Request a Quote</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="suppliers.html">Become a Supplier</a></li>
+                        <li><a data-open-supplier href="suppliers.html">Become a Supplier</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -294,7 +213,7 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@soltorvi.com">info@soltorvi.com</a></li>
+                        <li><a href="mailto:info@soltorcapital.com">info@soltorcapital.com</a></li>
                         <li><a href="tel:+2340000000000">+234 (0) 000 000 0000</a></li>
                         <li>Lagos, Nigeria</li>
                     </ul>
@@ -303,7 +222,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-                <p>&copy; <span class="current-year">2026</span> Soltor VI Limited. All rights reserved.</p>
+                <p>&copy; <span class="current-year">2026</span> Soltor Capital. All rights reserved.</p>
                 <div class="footer-legal-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms &amp; Conditions</a>
@@ -314,5 +233,18 @@
     </footer>
 
     <script src="js/main.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a970a2c20fb4034440e18f6/1k1evvg1n';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>

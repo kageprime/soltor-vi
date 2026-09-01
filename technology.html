@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology Solutions — Soltor VI Limited</title>
-    <meta name="description" content="Enterprise IT products, networking, security, structured cabling, and data-center services from Soltor VI Limited.">
+    <title>Technology Solutions — Soltor Capital</title>
+    <meta name="description" content="Enterprise IT products, networking, security, structured cabling, and data-center services from Soltor Capital.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b0c10'/><text x='50' y='72' font-size='62' font-family='sans-serif' font-weight='800' fill='%23fff' text-anchor='middle'>S</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/day-theme.css">
+    <link rel="stylesheet" href="css/day-footer.css">
+    
 </head>
-<body>
+<body class="phase-midday">
 
     <header class="site-header">
         <div class="header-dock">
-            <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">VI</span></span></a>
+            <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">CAPITAL</span></span></a>
             <nav class="nav-container">
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="divisions.html" class="nav-link">About</a></li>
-                    <li><a href="products.html" class="nav-link">Oil &amp; Gas</a></li>
+                    <li><a href="divisions.html" class="nav-link">Divisions</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
                     <li><a href="technology.html" class="nav-link active">Technology</a></li>
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="suppliers.html" class="nav-link">Suppliers</a></li>
@@ -36,8 +39,8 @@
         <button class="close-menu" aria-label="Close Menu">&times;</button>
         <ul class="mobile-nav-links">
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="divisions.html" class="nav-link">About</a></li>
-            <li><a href="products.html" class="nav-link">Oil &amp; Gas</a></li>
+            <li><a href="divisions.html" class="nav-link">Divisions</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
             <li><a href="technology.html" class="nav-link active">Technology</a></li>
             <li><a href="projects.html" class="nav-link">Projects</a></li>
             <li><a href="suppliers.html" class="nav-link">Suppliers</a></li>
@@ -52,7 +55,8 @@
 
     <main>
     <!-- PAGE HERO -->
-    <section class="page-hero page-hero--photo" style="background: linear-gradient(180deg, rgba(11,12,16,0.66), rgba(11,12,16,0.88)), url('images/technology-bg.png') center/cover;">
+    <section class="page-hero">
+        <div class="page-hero-sky" aria-hidden="true"></div>
         <div class="container">
             <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Technology</span></nav>
             <span class="eyebrow">Enterprise Infrastructure</span>
@@ -71,14 +75,14 @@
             </div>
 
             <div class="grid grid-4 reveal is-in" style="margin-bottom:4rem;">
-                <div class="card"><span class="card-tag">T-01</span><h4 style="margin:8px 0 10px;">Servers &amp; Storage</h4><p>Dell, HP, Lenovo enterprise rack and tower servers, NAS/SAN storage.</p></div>
-                <div class="card"><span class="card-tag">T-02</span><h4 style="margin:8px 0 10px;">Networking Equipment</h4><p>Cisco, Juniper, Aruba routers, switches, and wireless access points.</p></div>
-                <div class="card"><span class="card-tag">T-03</span><h4 style="margin:8px 0 10px;">Security Systems</h4><p>Firewalls, UTM appliances, endpoint protection, and access control.</p></div>
-                <div class="card"><span class="card-tag">T-04</span><h4 style="margin:8px 0 10px;">CCTV &amp; Surveillance</h4><p>IP cameras, NVR/DVR systems, video analytics, and monitoring.</p></div>
-                <div class="card"><span class="card-tag">T-05</span><h4 style="margin:8px 0 10px;">Structured Cabling</h4><p>Cat6/6A/7, fiber optic cables, patch panels, and cable management.</p></div>
-                <div class="card"><span class="card-tag">T-06</span><h4 style="margin:8px 0 10px;">UPS &amp; Power</h4><p>Uninterruptible power supplies, PDUs, and power management.</p></div>
-                <div class="card"><span class="card-tag">T-07</span><h4 style="margin:8px 0 10px;">Computers &amp; Workstations</h4><p>Enterprise laptops, desktops, and engineering workstations.</p></div>
-                <div class="card"><span class="card-tag">T-08</span><h4 style="margin:8px 0 10px;">Rack Infrastructure</h4><p>Server racks, enclosures, cooling, and data center equipment.</p></div>
+                <div class="card"><span class="card-tag">T-01</span><div class="card-media"><img src="images/division-technology.jpg" alt="Enterprise rack servers and storage arrays" loading="lazy"></div><h4 style="margin:8px 0 10px;">Servers &amp; Storage</h4><p>Dell, HP, Lenovo enterprise rack and tower servers, NAS/SAN storage.</p></div>
+                <div class="card"><span class="card-tag">T-02</span><div class="card-media"><img src="images/tech-network.jpg" alt="Wall-mounted network rack with switch and router" loading="lazy"></div><h4 style="margin:8px 0 10px;">Networking Equipment</h4><p>Cisco, Juniper, Aruba routers, switches, and wireless access points.</p></div>
+                <div class="card"><span class="card-tag">T-03</span><div class="card-media"><img src="images/tech-security.jpg" alt="Network security operations with firewalls" loading="lazy"></div><h4 style="margin:8px 0 10px;">Security Systems</h4><p>Firewalls, UTM appliances, endpoint protection, and access control.</p></div>
+                <div class="card"><span class="card-tag">T-04</span><div class="card-media"><img src="images/tech-cctv.jpg" alt="CCTV surveillance camera on a pole" loading="lazy"></div><h4 style="margin:8px 0 10px;">CCTV &amp; Surveillance</h4><p>IP cameras, NVR/DVR systems, video analytics, and monitoring.</p></div>
+                <div class="card"><span class="card-tag">T-05</span><div class="card-media"><img src="images/stock-network.webp" alt="Structured cabling and patch panels" loading="lazy"></div><h4 style="margin:8px 0 10px;">Structured Cabling</h4><p>Cat6/6A/7, fiber optic cables, patch panels, and cable management.</p></div>
+                <div class="card"><span class="card-tag">T-06</span><div class="card-media"><img src="images/tech-power.jpg" alt="Electrical power distribution equipment" loading="lazy"></div><h4 style="margin:8px 0 10px;">UPS &amp; Power</h4><p>Uninterruptible power supplies, PDUs, and power management.</p></div>
+                <div class="card"><span class="card-tag">T-07</span><div class="card-media"><img src="images/tech-computers.jpg" alt="Enterprise laptops and workstations" loading="lazy"></div><h4 style="margin:8px 0 10px;">Computers &amp; Workstations</h4><p>Enterprise laptops, desktops, and engineering workstations.</p></div>
+                <div class="card"><span class="card-tag">T-08</span><div class="card-media"><img src="images/tech-rack.jpg" alt="Server rack cabinets in a data center" loading="lazy"></div><h4 style="margin:8px 0 10px;">Rack Infrastructure</h4><p>Server racks, enclosures, cooling, and data center equipment.</p></div>
             </div>
 
             <h3 class="reveal is-in" style="margin-bottom:2rem; text-align:center;">Technology Services</h3>
@@ -110,18 +114,18 @@
         <div class="container footer-main">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">VI</span></span></a>
+                    <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">CAPITAL</span></span></a>
                     <p>International trading, procurement, technology, and contracting company.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="divisions.html">About Us</a></li>
+                        <li><a href="divisions.html">Divisions</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="products.html#quote">Request a Quote</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="suppliers.html">Become a Supplier</a></li>
+                        <li><a data-open-supplier href="suppliers.html">Become a Supplier</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -134,7 +138,7 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@soltorvi.com">info@soltorvi.com</a></li>
+                        <li><a href="mailto:info@soltorcapital.com">info@soltorcapital.com</a></li>
                         <li><a href="tel:+2340000000000">+234 (0) 000 000 0000</a></li>
                         <li>Lagos, Nigeria</li>
                     </ul>
@@ -143,7 +147,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-                <p>&copy; <span class="current-year">2026</span> Soltor VI Limited. All rights reserved.</p>
+                <p>&copy; <span class="current-year">2026</span> Soltor Capital. All rights reserved.</p>
                 <div class="footer-legal-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms &amp; Conditions</a>
@@ -154,5 +158,18 @@
     </footer>
 
     <script src="js/main.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a970a2c20fb4034440e18f6/1k1evvg1n';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>

@@ -1,0 +1,188 @@
+/* ============================================================
+   SOLTOR CAPITAL — "The Soltor Way" design system (subpages)
+   Every page owns a day-phase driving one accent color across
+   kickers, buttons, badges, cards and the closing CTA band.
+   Set the phase on <body class="phase-...">:
+     phase-dawn | phase-morning | phase-midday |
+     phase-golden | phase-dusk
+   ============================================================ */
+
+/* ---- Phase identities ---- */
+.phase-dawn   { --acc:#c25a3f; --acc-soft:rgba(224,122,95,.12); --acc-line:rgba(194,90,63,.28); }
+.phase-morning{ --acc:#0284c7; --acc-soft:rgba(2,132,199,.10); --acc-line:rgba(2,132,199,.26); }
+.phase-midday { --acc:#0369a1; --acc-soft:rgba(3,105,161,.10); --acc-line:rgba(3,105,161,.26); }
+.phase-golden { --acc:#b45809; --acc-soft:rgba(180,88,9,.10);  --acc-line:rgba(180,88,9,.28); }
+.phase-dusk   { --acc:#4a52c9; --acc-soft:rgba(90,100,220,.10); --acc-line:rgba(74,82,201,.26); }
+
+/* ============================================================
+   LANDING-STYLE CHAPTER HEROES
+   Each page hero becomes a full-viewport chapter sky like the
+   homepage masthead — layered gradient per phase, mono kicker,
+   display headline, subtitle, phase-colored bottom glow.
+   ============================================================ */
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 88vh;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(120px, 18vh, 190px) 16px 64px;
+  color: #fff;
+  background: #0a0f22;
+}
+.page-hero-sky {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(120% 90% at 85% -10%, color-mix(in srgb, var(--acc) 45%, transparent) 0%, transparent 55%),
+    linear-gradient(165deg, var(--hero-top, #0a0f22) 0%, var(--hero-bot, #322557) 100%);
+}
+.page-hero-sky::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(85% 45% at 50% 108%, color-mix(in srgb, var(--acc) 26%, transparent) 0%, transparent 72%);
+}
+.phase-dawn .page-hero    { --hero-top:#241f3b; --hero-bot:#b95a44; }
+.phase-morning .page-hero { --hero-top:#0c2740; --hero-bot:#3f97c4; }
+.phase-midday .page-hero  { --hero-top:#0b2540; --hero-bot:#2f8fc9; }
+.phase-golden .page-hero  { --hero-top:#2a1407; --hero-bot:#c2690e; }
+.phase-dusk .page-hero    { --hero-top:#0a0f2c; --hero-bot:#3d2f66; }
+
+.page-hero > .container { position: relative; z-index: 1; width: 100%; }
+.page-hero h1 {
+  font-size: clamp(2.5rem, 5.4vw, 4.3rem);
+  letter-spacing: -0.025em;
+  max-width: 20ch;
+  color: #fff;
+}
+.page-hero .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: rgba(255,247,239,.92);
+}
+.page-hero .eyebrow::before { background: currentColor; opacity: .7; }
+.page-hero .section-subtitle { color: rgba(255,247,239,.8); max-width: 660px; margin: 24px 0 0; }
+
+/* ============================================================
+   SECTION RHYTHM: mono kickers + display headings
+   ============================================================ */
+.eyebrow-dash {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--acc);
+}
+.eyebrow-dash::before { content: ""; width: 34px; height: 1px; background: var(--acc); }
+.section-header { margin-bottom: var(--space-12); }
+.section-header h2 { letter-spacing: -0.02em; }
+
+/* ============================================================
+   PHASE-ACCENTED ACTIONS & COMPONENTS
+   ============================================================ */
+.btn-primary { background: var(--acc); }
+.btn-primary:hover { background: color-mix(in srgb, var(--acc) 85%, #000); }
+.card-tag, .cap-num { color: var(--acc); }
+.badge { background: var(--acc-soft); color: var(--acc); border: 1px solid var(--acc-line); }
+.status-completed { background: var(--acc-soft); color: var(--acc); }
+.status-ongoing { background: var(--acc-soft); color: var(--acc); border: 1px dashed var(--acc-line); }
+.role-row-num { color: var(--acc); }
+.role-row:hover .role-row-arrow { color: var(--acc); }
+/* ============================================================
+   CARDS AS DAY PANELS
+   ============================================================ */
+.card, .product-card, .cap-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line);
+  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease);
+}
+.card:hover, .product-card:hover, .cap-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--acc-line);
+  box-shadow: 0 18px 44px -22px color-mix(in srgb, var(--acc) 45%, transparent);
+}
+
+/* ============================================================
+   CTA BAND: THE PAGE'S PHASE FINALE
+   ============================================================ */
+.cta-section {
+  background:
+    radial-gradient(120% 140% at 85% -20%, color-mix(in srgb, var(--acc) 38%, transparent) 0%, transparent 55%),
+    linear-gradient(160deg, #0c1631 0%, #0a0f22 100%);
+  color: #fff7ef;
+}
+.cta-section p { color: rgba(255,247,239,.75); }
+
+/* ============================================================
+   LAYERING & SHARED COMPONENTS
+   ============================================================ */
+.footer { position: relative; z-index: 2; }
+
+.day-banner {
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--surface-2);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-10);
+}
+.day-banner img { width: 100%; aspect-ratio: 21/9; object-fit: cover; display: block; }
+.day-banner figcaption {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--acc);
+  padding: 14px 20px;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.card-media {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  margin-bottom: var(--space-4);
+  background: var(--surface-2);
+}
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s var(--ease);
+}
+.card:hover .card-media img { transform: scale(1.04); }
+
+/* ============================================================
+   FOCUS STATES
+   ============================================================ */
+a:focus-visible, button:focus-visible, .btn:focus-visible,
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--acc);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   RESPONSIVE & REDUCED MOTION
+   ============================================================ */
+@media (max-width: 720px) {
+  .page-hero { min-height: 72vh; padding: 110px 24px 40px; }
+  .page-hero h1 { font-size: clamp(2.1rem, 8.5vw, 3.4rem); }
+  .day-banner img { aspect-ratio: 16/9; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .product-card, .cap-card, .card-media img { transition: none; }
+  .card:hover, .product-card:hover, .cap-card:hover { transform: none; }
+  .card:hover .card-media img { transform: none; }
+}

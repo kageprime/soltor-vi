@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Become a Supplier — Soltor VI Limited</title>
-    <meta name="description" content="Join the Soltor VI Limited international supplier network for oil & gas, technology, industrial equipment, and contracting.">
+    <title>Become a Supplier — Soltor Capital</title>
+    <meta name="description" content="Join the Soltor Capital international supplier network for oil & gas, technology, industrial equipment, and contracting.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b0c10'/><text x='50' y='72' font-size='62' font-family='sans-serif' font-weight='800' fill='%23fff' text-anchor='middle'>S</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/day-theme.css">
+    <link rel="stylesheet" href="css/day-footer.css">
+    
 </head>
-<body>
+<body class="phase-dusk">
 
     <header class="site-header">
         <div class="header-dock">
-            <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">VI</span></span></a>
+            <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">CAPITAL</span></span></a>
             <nav class="nav-container">
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="divisions.html" class="nav-link">About</a></li>
-                    <li><a href="products.html" class="nav-link">Oil &amp; Gas</a></li>
+                    <li><a href="divisions.html" class="nav-link">Divisions</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
                     <li><a href="technology.html" class="nav-link">Technology</a></li>
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="suppliers.html" class="nav-link active">Suppliers</a></li>
@@ -36,8 +39,8 @@
         <button class="close-menu" aria-label="Close Menu">&times;</button>
         <ul class="mobile-nav-links">
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="divisions.html" class="nav-link">About</a></li>
-            <li><a href="products.html" class="nav-link">Oil &amp; Gas</a></li>
+            <li><a href="divisions.html" class="nav-link">Divisions</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
             <li><a href="technology.html" class="nav-link">Technology</a></li>
             <li><a href="projects.html" class="nav-link">Projects</a></li>
             <li><a href="suppliers.html" class="nav-link active">Suppliers</a></li>
@@ -52,7 +55,8 @@
 
     <main>
     <!-- PAGE HERO -->
-    <section class="page-hero page-hero--photo" style="background: linear-gradient(180deg, rgba(11,12,16,0.74), rgba(11,12,16,0.90)), url('images/hero-bg.png') center/cover;">
+    <section class="page-hero">
+        <div class="page-hero-sky" aria-hidden="true"></div>
         <div class="container">
             <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Suppliers</span></nav>
             <span class="eyebrow">Supplier Network</span>
@@ -103,66 +107,16 @@
                 <div class="step"><span class="step-circle">4</span><span class="step-label">Approval</span></div>
             </div>
 
-            <div id="supplier-form" class="form-section card reveal is-in">
+            <figure class="day-banner reveal is-in">
+                <img src="images/stock-meeting.jpg" alt="Procurement team meeting with partners" loading="lazy">
+                <figcaption>Work with our procurement team &mdash; global sourcing partners</figcaption>
+            </figure>
+            <div class="card" style="max-width:640px; margin:0 auto; text-align:center; padding:40px 32px;" data-open-supplier>
+                <div class="icon-tile" style="margin:0 auto 16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
                 <h3>Supplier Registration</h3>
-                <form action="#" method="POST" novalidate>
-                    <div class="form-row">
-                        <div class="form-group"><label class="form-label" for="sup-company">Company Name <span class="req">*</span></label><input type="text" id="sup-company" name="company_name" class="form-input" required></div>
-                        <div class="form-group"><label class="form-label" for="sup-country">Country <span class="req">*</span></label><input type="text" id="sup-country" name="country" class="form-input" required></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label class="form-label" for="sup-website">Website</label><input type="url" id="sup-website" name="website" class="form-input" placeholder="https://"></div>
-                        <div class="form-group"><label class="form-label" for="sup-person">Contact Person <span class="req">*</span></label><input type="text" id="sup-person" name="contact_person" class="form-input" required></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label class="form-label" for="sup-email">Email <span class="req">*</span></label><input type="email" id="sup-email" name="email" class="form-input" required></div>
-                        <div class="form-group"><label class="form-label" for="sup-phone">Phone <span class="req">*</span></label><input type="tel" id="sup-phone" name="phone" class="form-input" required></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="sup-category">Business Category <span class="req">*</span></label>
-                        <select id="sup-category" name="category" class="form-select" required>
-                            <option value="">Select Category</option>
-                            <option value="Oil & Gas Products">Oil &amp; Gas Products</option>
-                            <option value="Oil & Gas Equipment">Oil &amp; Gas Equipment</option>
-                            <option value="Technology Products">Technology Products</option>
-                            <option value="Networking">Networking</option>
-                            <option value="Industrial Equipment">Industrial Equipment</option>
-                            <option value="General Supplies">General Supplies</option>
-                            <option value="Multiple Categories">Multiple Categories</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="sup-products">Products &amp; Services</label>
-                        <textarea id="sup-products" name="products_services" class="form-textarea" rows="4" placeholder="Describe your main products and services"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="sup-mfg">Manufacturer Relationships</label>
-                        <textarea id="sup-mfg" name="manufacturer_relationships" class="form-textarea" rows="3" placeholder="List any manufacturer authorizations or partnerships"></textarea>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label class="form-label" for="sup-certs">Certifications</label><input type="text" id="sup-certs" name="certifications" class="form-input" placeholder="e.g., ISO 9001, API"></div>
-                        <div class="form-group"><label class="form-label" for="sup-years">Years in Business</label><input type="number" id="sup-years" name="years_in_business" class="form-input" min="0"></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="sup-file-profile">Upload Company Profile / Catalogue</label>
-                        <input type="file" id="sup-file-profile" name="company_profile" accept=".pdf,.doc,.docx">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="sup-file-certs">Upload Certifications</label>
-                        <input type="file" id="sup-file-certs" name="certifications_files" accept=".pdf,.jpg,.png">
-                    </div>
-                    <div class="form-group" style="display:flex; align-items:flex-start; gap:10px; margin-bottom:2rem;">
-                        <input type="checkbox" id="sup-confirm" name="confirm" class="form-input" required style="width:auto; margin-top:5px;">
-                        <label class="form-label" for="sup-confirm" style="margin:0;">I confirm that the information provided is accurate and I agree to the supplier terms</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Register as Supplier</button>
-                </form>
-                <div id="supplier-success" class="form-success">
-                    <div class="form-success-icon">&#10003;</div>
-                    <h3>Registration Received</h3>
-                    <p>Thank you for registering as a supplier. Our procurement team will review your submission and contact you within 5 business days.</p>
-                    <button type="button" class="btn btn-outline reset-form-btn">Submit Another</button>
-                </div>
+                <p style="margin:12px 0 24px; color:var(--text-muted);">Registration now opens in a modal — same verification, no page reload. Review in 5 business days.</p>
+                <button type="button" class="btn btn-primary btn-lg" data-open-supplier>Open supplier form</button>
+                <p style="margin-top:12px; font-size:0.85rem; color:var(--text-faint);">Questions? <a href="mailto:info@soltorcapital.com" style="color:var(--sky-strong); font-weight:600;">info@soltorcapital.com</a></p>
             </div>
         </div>
     </section>
@@ -172,18 +126,18 @@
         <div class="container footer-main">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">VI</span></span></a>
+                    <a href="index.html" class="logo"><span class="logo-mark">S</span><span class="logo-text">SOLTOR <span class="logo-accent">CAPITAL</span></span></a>
                     <p>International trading, procurement, technology, and contracting company.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="divisions.html">About Us</a></li>
+                        <li><a href="divisions.html">Divisions</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="products.html#quote">Request a Quote</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="suppliers.html">Become a Supplier</a></li>
+                        <li><a data-open-supplier href="suppliers.html">Become a Supplier</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -196,7 +150,7 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li><a href="mailto:info@soltorvi.com">info@soltorvi.com</a></li>
+                        <li><a href="mailto:info@soltorcapital.com">info@soltorcapital.com</a></li>
                         <li><a href="tel:+2340000000000">+234 (0) 000 000 0000</a></li>
                         <li>Lagos, Nigeria</li>
                     </ul>
@@ -205,7 +159,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-                <p>&copy; <span class="current-year">2026</span> Soltor VI Limited. All rights reserved.</p>
+                <p>&copy; <span class="current-year">2026</span> Soltor Capital. All rights reserved.</p>
                 <div class="footer-legal-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms &amp; Conditions</a>
@@ -216,5 +170,18 @@
     </footer>
 
     <script src="js/main.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a970a2c20fb4034440e18f6/1k1evvg1n';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
