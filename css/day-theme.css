@@ -113,11 +113,13 @@
 
 /* ============================================================
    CTA BAND: THE PAGE'S PHASE FINALE
+   180deg so the bottom edge is a uniform colour that the
+   footer can pick up seamlessly.
    ============================================================ */
 .cta-section {
   background:
     radial-gradient(120% 140% at 85% -20%, color-mix(in srgb, var(--acc) 38%, transparent) 0%, transparent 55%),
-    linear-gradient(160deg, #0c1631 0%, #0a0f22 100%);
+    linear-gradient(180deg, #0c1631 0%, #0a0f22 100%);
   color: #fff7ef;
 }
 .cta-section p { color: rgba(255,247,239,.75); }

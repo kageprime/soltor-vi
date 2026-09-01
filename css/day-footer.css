@@ -1,32 +1,26 @@
 /* ============================================================
-   SOLTOR CAPITAL — Footer as a day-series finale
-   Shared across every page. The footer does not start a new
-   visual block: it EXTENDS the component directly above it.
-   - On subpages it continues the phase CTA band (same top-right
-     accent glow, starting colour = the band's ending colour).
-   - On the homepage it continues the dusk chapter sky.
-   It keeps the same mono-kicker language as the rest of system.
+   SOLTOR CAPITAL — Footer
+   The footer has NO visual identity of its own. It inherits
+   the gradient from the component directly above it and simply
+   continues deepening. On subpages it picks up the CTA band's
+   ending colour (#0a0f22). On the homepage it picks up the
+   dusk chapter sky's ending colour (#322557). Same accent
+   mono-kicker language as the rest of the system.
    ============================================================ */
 
 .footer {
   position: relative;
   z-index: 2;
-  background:
-    radial-gradient(120% 140% at 85% -20%, color-mix(in srgb, var(--acc, #9aa8ff) 34%, transparent) 0%, transparent 55%),
-    linear-gradient(180deg, #0a0f22 0%, #050812 100%);
+  background: linear-gradient(180deg, #0a0f22 0%, #060a18 55%, #04060f 100%);
   color: #fff7ef;
   border-top: 0;
 }
 
-/* Subpages follow the phase CTA band (which ends near #0a0f22);
-   the footer starts from that same colour so the two read as one. */
-
-/* Homepage: the footer extends the dusk chapter sky — the fixed
-   .day-sky ends at #322557, so carry that colour forward instead. */
+/* Homepage: the footer inherits the dusk chapter sky, which
+   ends at #322557 — carry that forward and deepen back to the
+   day's starting colour (#0a0f2c) for a full-circle close. */
 .day ~ .footer {
-  background:
-    radial-gradient(120% 140% at 85% -20%, color-mix(in srgb, #9aa8ff 40%, transparent) 0%, transparent 55%),
-    linear-gradient(180deg, #322557 0%, #14102e 100%);
+  background: linear-gradient(180deg, #322557 0%, #1e1745 55%, #0a0f2c 100%);
 }
 
 .footer .container { position: relative; }
