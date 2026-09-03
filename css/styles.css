@@ -651,8 +651,11 @@ input, select, textarea { font-family: inherit; }
 .cap-num { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sky); }
 .cap-feature {
   grid-column: span 7; grid-row: span 2; justify-content: flex-end; min-height: 440px;
-  background-size: cover; background-position: center; color: #fff; border: none;
+  background-size: cover; background-position: center; background-color: var(--ink-900); color: #fff; border: none;
 }
+.cap-feature h3 { color: #fff; }
+.cap-feature p { color: rgba(255, 255, 255, 0.84); }
+.cap-half { grid-column: span 6; }
 .cap-feature::before {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(to top, rgba(12,74,110,0.92) 0%, rgba(12,74,110,0.45) 55%, rgba(12,74,110,0.12) 100%);
@@ -948,7 +951,7 @@ input[type="file"]:hover { border-color: var(--sky); }
 @media (max-width: 1024px) {
   .home-hero-inner { grid-template-columns: 1fr; gap: 48px; }
   .cap-grid { grid-template-columns: 1fr; }
-  .cap-feature, .cap-side { grid-column: 1 / -1; grid-row: auto; }
+  .cap-feature, .cap-side, .cap-half { grid-column: 1 / -1; grid-row: auto; }
   .cap-feature { min-height: 360px; }
   .role-row { grid-template-columns: 40px 1fr; grid-template-areas: "num title" "body body"; gap: 12px; }
   .role-row-arrow { display: none; }

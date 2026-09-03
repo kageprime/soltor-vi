@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 13. WhatsApp Links
     // ==========================================
     const waLinks = document.querySelectorAll('a[href*="whatsapp.com"], a[href*="wa.me"], .whatsapp-link');
-    const placeholderPhone = '1234567890'; // Replace with actual number in prod
+    const placeholderPhone = '2347075447600';
     
     waLinks.forEach(link => {
         if (link.getAttribute('href') === '#' || !link.getAttribute('href')) {
