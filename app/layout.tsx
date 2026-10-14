@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
+import Script from 'next/script'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import './globals.css'
@@ -45,6 +46,14 @@ export default function RootLayout({
         <main id="main">{children}</main>
         <SiteFooter />
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <Script id="tawk-init" strategy="afterInteractive">
+          {`var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();`}
+        </Script>
+        <Script
+          id="tawk-to-embed"
+          strategy="afterInteractive"
+          src="https://embed.tawk.to/6a970a2c20fb4034440e18f6/1k1evvg1n"
+        />
       </body>
     </html>
   )
