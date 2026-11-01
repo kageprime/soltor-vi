@@ -11,7 +11,7 @@ export function CtaBand({
 }: {
   title: string
   body: string
-  primary?: { href: string; label: string }
+  primary?: { href: string label: string }
   secondary?: { href: string; label: string }
   image?: string
 }) {
